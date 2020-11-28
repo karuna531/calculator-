@@ -34,15 +34,7 @@ function back() {
     //delete last letter function.
      result.value = result.value.slice(0, - 1);
 }
-function square(){
-	let a = document.getElementById("result").value;
-	if(a==""){
-		return;
-	}
-	let y =a*a;
-	document.getElementById("result").value = y;
 
-}
 
 
 
