@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple calculator</title>
+	<div class="text-center mb-4">
+  <button class="toggle-mode">Dark Mode</button>
+</div>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width initial-scale=1.0" >
+	<link rel="stylesheet" type="text/css" href="../website/calculator.css">
+
+</head>
+<body>
+	<h1>Simple calculator</h1>
+	<center>
+	<table class="centers">
+		<tr>
+			<td colspan=3>
+				<input type="text" id="result">
+			</td>
+			<td>
+				<input type="button" value="C" Onclick="clearResult()">
+			</td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="1" Onclick="displayValue('1')"></td>
+			<td><input type="button" value="2" Onclick="displayValue('2')"></td>
+			<td><input type="button" value="3" Onclick="displayValue('3')"></td>
+			<td><input type="button" value="/" Onclick="displayValue('/')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" Onclick="displayValue('4')"></td>
+			<td><input type="button" value="5" Onclick="displayValue('5')"></td>
+			<td><input type="button" value="6" Onclick="displayValue('6')"></td>
+			<td><input type="button" value="-" Onclick="displayValue('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" Onclick="displayValue('7')"></td>
+			<td><input type="button" value="8" Onclick="displayValue('8')"></td>
+			<td><input type="button" value="9" Onclick="displayValue('9')"></td>
+			<td><input type="button" value="+" Onclick="displayValue('+')"></td>
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="." Onclick="displayValue('.')"></td>
+			<td><input type="button" value="0" Onclick="displayValue('0')"></td>
+			<td><input type="button" value="00" Onclick="displayValue('00')"></td>
+			<td><input type="button" value="*" Onclick="displayValue('*')"></td>
+		</tr>
+		<tr>
+			<td ><input type="button" value="back" Onclick="back()"></td>
+				<td ><input type="button" value="(" Onclick="displayValue('(')" id="1"></td>
+				<td ><input type="button" value=")" Onclick="displayValue(')')""></td>
+				<td><input type="button" value="="  id="red" Onclick="solve()"></td>
+			
+			
+		</tr>
+
+		
+    
+   
+		
+	</table>
+	</center>
+
+<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
